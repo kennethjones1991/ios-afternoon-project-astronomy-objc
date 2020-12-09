@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6173B172258076D00035484A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6173B171258076D00035484A /* AppDelegate.m */; };
 		6173B175258076D00035484A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6173B174258076D00035484A /* SceneDelegate.m */; };
-		6173B178258076D00035484A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6173B177258076D00035484A /* ViewController.m */; };
 		6173B17B258076D00035484A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6173B179258076D00035484A /* Main.storyboard */; };
 		6173B17D258076D30035484A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6173B17C258076D30035484A /* Assets.xcassets */; };
 		6173B180258076D30035484A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6173B17E258076D30035484A /* LaunchScreen.storyboard */; };
@@ -18,6 +17,9 @@
 		6173B193258076E40035484A /* LSIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 6173B18C258076E40035484A /* LSIErrors.m */; };
 		6173B194258076E40035484A /* LSIFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6173B18D258076E40035484A /* LSIFileHelper.m */; };
 		6173B195258076E40035484A /* URL+Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173B191258076E40035484A /* URL+Secure.swift */; };
+		6173B1A225807ECF0035484A /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173B1A125807ECF0035484A /* PhotosCollectionViewController.swift */; };
+		6173B1A525807F050035484A /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173B1A425807F050035484A /* PhotoDetailViewController.swift */; };
+		6173B1A82580809A0035484A /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173B1A72580809A0035484A /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,6 @@
 		6173B171258076D00035484A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6173B173258076D00035484A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		6173B174258076D00035484A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		6173B176258076D00035484A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6173B177258076D00035484A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6173B17A258076D00035484A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6173B17C258076D30035484A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6173B17F258076D30035484A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,9 @@
 		6173B18F258076E40035484A /* LSIErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSIErrors.h; sourceTree = "<group>"; };
 		6173B190258076E40035484A /* LSILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSILog.h; sourceTree = "<group>"; };
 		6173B191258076E40035484A /* URL+Secure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Secure.swift"; sourceTree = "<group>"; };
+		6173B1A125807ECF0035484A /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		6173B1A425807F050035484A /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		6173B1A72580809A0035484A /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				6173B19D258079130035484A /* App */,
-				6173B176258076D00035484A /* ViewController.h */,
-				6173B177258076D00035484A /* ViewController.m */,
+				6173B179258076D00035484A /* Main.storyboard */,
 				6173B17C258076D30035484A /* Assets.xcassets */,
 				6173B181258076D30035484A /* Info.plist */,
 				6173B182258076D30035484A /* main.m */,
@@ -107,6 +109,7 @@
 		6173B197258078380035484A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6173B1A72580809A0035484A /* Camera.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +124,8 @@
 		6173B199258078480035484A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6173B1A125807ECF0035484A /* PhotosCollectionViewController.swift */,
+				6173B1A425807F050035484A /* PhotoDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -153,7 +158,6 @@
 				6173B171258076D00035484A /* AppDelegate.m */,
 				6173B173258076D00035484A /* SceneDelegate.h */,
 				6173B174258076D00035484A /* SceneDelegate.m */,
-				6173B179258076D00035484A /* Main.storyboard */,
 				6173B17E258076D30035484A /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -185,6 +189,7 @@
 		6173B165258076D00035484A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MKJ;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					6173B16C258076D00035484A = {
@@ -229,13 +234,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6173B195258076E40035484A /* URL+Secure.swift in Sources */,
-				6173B178258076D00035484A /* ViewController.m in Sources */,
 				6173B192258076E40035484A /* LSILog.m in Sources */,
 				6173B172258076D00035484A /* AppDelegate.m in Sources */,
 				6173B183258076D30035484A /* main.m in Sources */,
 				6173B194258076E40035484A /* LSIFileHelper.m in Sources */,
 				6173B175258076D00035484A /* SceneDelegate.m in Sources */,
+				6173B1A82580809A0035484A /* Camera.swift in Sources */,
+				6173B1A525807F050035484A /* PhotoDetailViewController.swift in Sources */,
 				6173B193258076E40035484A /* LSIErrors.m in Sources */,
+				6173B1A225807ECF0035484A /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
